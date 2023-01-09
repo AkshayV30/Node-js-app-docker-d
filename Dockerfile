@@ -1,6 +1,7 @@
 FROM node:alpine3.16
 
-COPY ./SimpleWebApp /mnt/
+#copy source destination
+COPY ./SimpleWebApp/ ./
 
 RUN npm install
 
