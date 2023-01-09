@@ -8,3 +8,4 @@ COPY ./SimpleWebApp /usr/app/
 RUN npm install 
 
 CMD ["npm", "start"]
+  
