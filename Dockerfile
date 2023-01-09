@@ -1,9 +1,7 @@
-FROM alpine:latest
+FROM node:alpine3.16
 
 COPY ./SimpleWebApp /mnt/
 
-RUN sudo apk update
-RUN sudo apk add --update nodejs nodejs-npm
-RUN sudo npm install
+RUN npm install
 
 CMD ["npm", "start"]
