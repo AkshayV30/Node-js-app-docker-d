@@ -1,8 +1,10 @@
 FROM node:18-alpine3.16
 
-#copy source destination
-COPY ./SimpleWebApp ./mnt
+WORKDIR /usr/app
 
-RUN npm install ./mnt
+#copy source destination
+COPY ./SimpleWebApp /usr/app/
+
+RUN npm install 
 
 CMD ["npm", "start"]
