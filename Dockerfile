@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-COPY . /
+COPY ./SimpleWebApp /mnt/
 
 RUN npm install
 
