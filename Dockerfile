@@ -6,6 +6,6 @@ WORKDIR /usr/app
 COPY ./SimpleWebApp/package.json ./
 
 RUN npm install 
-COPY ./ ./
+COPY ./SimpleWebApp ./
 
 CMD ["npm", "start"]
